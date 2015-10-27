@@ -1,0 +1,115 @@
+% Select BIOS and SMM attacks (excluding ITL papers, which are maintained in itl_attacks.bib)
+
+@MISC{   duflot_smm_original,
+    author = "Loic Duflot and Daniel Etiemble and Olivier Grumelard",
+    title = "Using {CPU System Management Mode} to Circumvent Operating System Security Functions",
+    year = 2006
+}
+
+@inproceedings{ embleton_smm_rootkit,
+    author = {Embleton, Shawn and Sparks, Sherri and Zou, Cliff},
+    title = {SMM Rootkits: A New Breed of {OS} Independent Malware},
+    booktitle = {Proceedings of the 4th International Conference on Security and Privacy in Communication Netowrks},
+    series = {SecureComm '08},
+    year = {2008},
+    isbn = {978-1-60558-241-2},
+    location = {Istanbul, Turkey},
+    pages = {11:1--11:12},
+    articleno = {11},
+    numpages = {12},
+    url = {http://doi.acm.org/10.1145/1460877.1460892},
+    doi = {10.1145/1460877.1460892},
+    acmid = {1460892},
+    publisher = {ACM},
+    address = {New York, NY, USA},
+    keywords = {malware, operating system security, rootkit, system management mode, virtualization},
+} 
+
+@MISC { duflot_acpi_attacks,
+    author = "Loic Duflot and Olivier Levillain and Benjamin Morin",
+    title = "{ACPI}: Design Principles and Concerns",
+    howpublished = "\url{http://www.ssi.gouv.fr/uploads/IMG/pdf/article_acpi.pdf}",
+    year = 2009,
+}
+
+@ARTICLE{ bsdaemon_smm_rootkit,
+    author = "BSDaemon and coideloko and D0nAnd0n",
+    title = {{System Management Mode} Hack: Using {SMM} for "Other Purposes"},
+    journal = "Phrack Magazine",
+    year = 2008,
+    howpublished = "\url{http://phrack.org/issues/65/7.html}"
+}
+
+@MISC{ duflot_smm_cache_attack,
+    author = "Loïc Duflot and Olivier Levillain and Benjamin Morin and Olivier Grumelard",
+    title = "Getting into the {SMRAM}: {SMM} Reloaded",
+    year = 2009,
+    howpublished = "\url{https://cansecwest.com/csw09/csw09-duflot.pdf}"
+}
+
+@MISC{ sacco_bios_infection,
+    author = "Anibal L. Sacco and Alfredo A. Ortega",
+    title = "Persistent {BIOS} Infection",
+    howpublished = "Presented at CanSecWest conference \url{https://cansecwest.com/csw09/csw09-sacco-ortega.pdf}",
+    year = 2009,
+}
+
+@INPROCEEDINGS{ butterworth_chronomancy,
+    author = "Butterworth, J. and Kallenberg, C. and Kovah, X.",
+    title = "{BIOS} Chronomancy: Fixing the {Core Root of Trust for Measurement}",
+    booktitle = "BlackHat",
+    howpublished = "Presented at Black Hat USA, \url{https://media.blackhat.com/us-13/US-13-Butterworth-BIOS-Security-Slides.pdf}",
+    year  = 2013,
+}
+
+
+@MISC{ bulygin_win8_secure_boot,
+    author = "Yuriy Bulygin and Andrew Furtak and Oleksandr Bazhaniuk",
+    title = "A Tale of One Software Bypass of {Windows 8 Secure Boot}",
+    howpublished = "Presented at Black Hat USA, \url{http://c7zero.info/stuff/Windows8SecureBoot_Bulygin-Furtak-Bazhniuk_BHUSA2013.pdf}",
+    year = 2013,
+}
+
+@MISC{  kallenberg_extreme_priv,
+    author = "Kallenberg, C. and Kovah, X. and Butterworth, J. and Cornwell, S.",
+    title = "Extreme Privilege Escalation on {UEFI} {Windows} 8 Systems",
+    howpublished = "Presented at Black Hat USA, \url{https://www.blackhat.com/docs/us-14/materials/us-14-Kallenberg-Extreme-Privilege-Escalation-On-Windows8-UEFI-Systems-WP.pdf}",
+    year = 2014,
+}
+
+@MISC{ kovah_uefi_bios,
+    author = "Xeno Kovah and John Butterworth and Corey Kallenberg and Sam Cornwell",
+    title = "Analyzing {UEFI BIOS} from Attacker \& Defender Viewpoints",
+    howpublished = "Presented at Black Hat EU, \url{https://www.blackhat.com/docs/eu-14/materials/eu-14-Kovah-Analyzing-UEFI-BIOSes-From-Attacker-And-Defender-Viewpoints.pdf}",
+    year = 2014,
+}
+
+@MISC{ nergal_darth_venamis,
+    author = "Rafał Wojtczuk and Corey Kallenberg",
+    title = "Attacks on {UEFI} security, inspired by {Darth Venamis's} misery and {Speed Racer}",
+    howpublished = "Presented at 31st Chaos Communication Congress, \url{https://media.ccc.de/browse/congress/2014/31c3_-_6129_-_en_-_saal_2_-_201412282030_-_attacks_on_uefi_security_inspired_by_darth_venamis_s_misery_and_speed_racer_-_rafal_wojtczuk_-_corey_kallenberg.html#download}",
+    year = 2014,
+}
+
+@MISC{ kovah_million_bioses,
+    author = "Kovah, X. and Kallenberg, C.",
+    title = "How Many Million {BIOSes} Would you Like to Infect?",
+    howpublished = "\url{http://legbacore.com/Research_files/HowManyMillionBIOSesWouldYouLikeToInfect_Whitepaper_v1.pdf}",
+    year = 2015,
+}
+
+@MISC{  intel_atr_bios_attacks,
+    author = "Oleksandr Bazhaniuk and Yuriy Bulygin and Andrew Furtak and Mikhail Gorobets and John Loucaides and Alex Matrosov and Mickey Shkatov",
+    title = "Attacking and Defending {BIOS} in 2015",
+    howpublished = "Presented at ReCon Conference, \url{http://www.intelsecurity.com/advanced-threat-research/content/AttackingAndDefendingBIOS-RECon2015.pdf}",
+    year = 2015,
+}
+
+@MISC{  intel_atr_firmware_vmm_attacks,
+    author = "Mikhail Gorobets and Oleksandr Bazhaniuk and Alex Matrosov and Andrew Furtak and Yuriy Bulygin",
+    title = "Attacking Hypervisors via Firmware and Hardware",
+    howpublished = "Presented at Black Hat, \url{http://www.intelsecurity.com/advanced-threat-research/content/AttackingHypervisorsViaFirmware_bhusa15_dc23.pdf}",
+    year = 2015,
+}
+
+% vim: set nospell nowrap cc=0 :
