@@ -608,7 +608,7 @@ the attack has been presented to Intel, the author reserves the right to remain
 sceptical about the above claims for the time being and hopes Intel addresses
 this scepticism sometime this decade.
 
-The second potential problem about STM is the so called resource negation
+The second potential problem about STM is the so called resource negotiation
 between the SMM and the STM. As it turns out the STM cannot really sandbox SMM
 the way it wants (i.e. thinks is reasonable) -- rather it's given a list of
 resources the SMM wants access to, and must obey this list. To be fair: the MLE
@@ -1551,7 +1551,7 @@ Intel processors, stands out as very troublesome, as explained in one of the
 chapters above. Sadly, and most depressing, there is no option for us users to
 opt-out from having this on our computing devices, whether we want it or not.
 The author considers this as probably the biggest mistake the PC industry has
-got itself into she has every witnessed.
+got itself into she has ever witnessed.
 
 ## And what about AMD?
 
