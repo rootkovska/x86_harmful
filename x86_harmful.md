@@ -124,15 +124,15 @@ considered the root of trust for the OS that executes on the platform, because:
 
 2. The BIOS has fully privileged access to all the hardware, so it can talk to
    all the devices at will and reprogram them as it likes: for instance to start
-   shooting DMA write transactions, at some point in time, to a pre-defined
+   shooting DMA write transactions, at some point in time, to a predefined
    memory location where the OS or hypervisor code is going to be loaded later.
 
 3. The BIOS provides the code that executes in System Management Mode (or SMM,
    discussed later) during the whole lifespan of the platform, and so it can
    easily inject malicious SMM rootkits [@embleton_smm_rootkit],
    [@bsdaemon_smm_rootkit], [@kovah_million_bioses].
-   
-   
+
+
 ## Bad SMM vs. Tails
 
 Perhaps the most spectacular demonstration of how security sensitive the BIOS
@@ -211,7 +211,7 @@ software that runs on the platform.
 Simple as it might sound, the challenge here is that there are legitimate cases
 where we would like to allow reflashing from the host OS, such as for updating
 the BIOS, or for storing persistent configuration of the platform (e.g. which
-device to boot from). 
+device to boot from).
 
 In order to solve this dilemma (protecting against reflashing by malware on the
 one hand, allowing to reflash for legitimate updates on the other), x86
@@ -327,7 +327,7 @@ latest Intel processors which implement the so called Boot Guard technology.
 Intel has recently introduced a new technology called Boot Guard [@me_book],
 which can be used in one of two modes of operation: 1) "measured boot", or 2)
 "verified boot", plus a third option that combines the two. In both cases a
-special, processor-provided and ROM-based, trusted piece of code ^[This is the
+special, processor-provided and ROM-based, trusted piece of code^[This is the
 processor boot ROM, and later Intel's signed Authenticated Code Modules (ACM)]
 executes first and plays the role of a CRTM discussed above. This CRTM then
 measures the next block of code (read from the flash), called the Initial Boot
@@ -694,7 +694,7 @@ About the best approach we can embrace today seems the following:
 2. Use a custom BIOS optimized for security (small, processing only minimal
    amount of untrusted input, embracing DMA protection before DRAM gets
    initialized),
-   
+
 3. Employ additional protection of the SPI flash chip (e.g. a variant of the
    work presented in [@stuge_flash_ro])
 
@@ -870,7 +870,7 @@ Unfortunately, we can do little against a potentially backdoored ME or an SMM.
 While the physical kill switch would be an effective solution here, it presents
 one significant disadvantage (in addition to the problem that nearly no laptop
 really implements it, that is): namely it prevents user from using (wireless)
-networking... 
+networking...
 
 ## The USB as an attack vector
 
@@ -1145,7 +1145,7 @@ as one of the reviewers pointed out. In practice, the author thinks, this seems
 really hard, and very system and applications software version-specific.]
 
 However, a reasonably practical attack could be for the EC to inject a
-pre-defined series of keystrokes that e.g. open a terminal window on the host
+predefined series of keystrokes that e.g. open a terminal window on the host
 and then paste in some shell script and execute it. This would be a very similar
 attack to one of the popular malicious-USB-device-pretends-to-be-keyboard
 attacks (e.g. [@stavrou_usb_attacks]).
@@ -1280,7 +1280,7 @@ ME, behind the closed doors without others being able to see how the ME
 processes this data, what algorithms it uses, and whether these are secure and
 trustworthy or not.
 
-Does a hypothetical email encryption implemented by the ME also adds an
+Does a hypothetical email encryption implemented by the ME also add an
 undesirable key escrow mechanism that the user cannot opt out of? Does it
 perform additional filtering of (decrypted) emails and documents, perhaps also
 samples of audio from microphone for "dangerous" words and phrases? Does it
@@ -1377,7 +1377,7 @@ would only know if Intel started shipping encrypted ME firmware one day...].
 While it is common for pretty much any complex processors to contain internal
 boot ROM, it's worth pointing out that not every product makes the boot ROM
 inaccessible to 3rd parties, see e.g. [@usbarmory_internal_bootrom].
- 
+
 ## Summary of Intel ME
 
 We have seen that Intel ME is potentially a very worrisome technology. We cannot
@@ -1513,7 +1513,7 @@ not only many programs run at the same time, but where the attacker typically
 also has very little control over triggering of various operations (such as
 crypto operations operating on the specific key or data), multiple times. This
 should be especially hard in a VMM-based desktop OS with ASLR (memory layout
-randomization) used inside each of the VM.
+randomization) used inside each of the VMs.
 
 Another interesting attack, that we could also classify as a side-channel type
 of attack, is the rowhammer attack exploiting physical faults in DRAM modules
